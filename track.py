@@ -215,9 +215,9 @@ def run(
                                 (f'{id} {conf:.2f}' if hide_class else f'{id} {names[c]} {conf:.2f}'))
                             annotator.box_label(bboxes, label, color=colors(c, True))
                             
-                            font=cv2.FONT_HERSHEY_SIMPLEX
+                            #font=cv2.FONT_HERSHEY_SIMPLEX
                             #cv2.putText(im0,f'Pessoas = {id}',(20,20),font,0.9,(0,255,0),1)
-                            cv2.putText(im0,f'Quantidade de Pessoas = 89',(20,20),font,1,(0,0,0),2)
+                            #cv2.putText(im0,f'Quantidade de Pessoas = 89',(20,20),font,1,(0,0,0),2)
                             
                             if save_crop:
                                 txt_file_name = txt_file_name if (isinstance(path, list) and len(path) > 1) else ''
